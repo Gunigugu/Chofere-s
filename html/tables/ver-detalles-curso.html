@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Consulta choferes</title>
+  <title>Detalles del curso</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -50,13 +50,13 @@
     <![endif]-->
 
   <!-- Scripts -->
-  <script src="../../assets/vendor/modernizr/modernizr.js"></script><style type="text/css"></style><style type="text/css"></style>
+  <script src="../../assets/vendor/modernizr/modernizr.js"></script>
   <script src="../../assets/vendor/breakpoints/breakpoints.js"></script>
   <script>
     Breakpoints();
   </script>
-<link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head>
-<body class="site-menubar-unfold" data-feedly-mini="yes">
+</head>
+<body class="site-menubar-unfold">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -143,7 +143,7 @@
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
 
-            <li class="site-menu-item has-sub">
+            <li class="site-menu-item has-sub active open">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-library" aria-hidden="true"></i>
                 <span class="site-menu-title">Cursos</span>
@@ -156,13 +156,13 @@
                     <span class="site-menu-title">Crear curso</span>
                   </a>
                 </li>
-                <li class="site-menu-item">
+                <li class="site-menu-item ">
                   <a class="animsition-link" href="../../html/tables/curso-lista.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Cursos anteriores</span>
                   </a>
                 </li>
-                <li class="site-menu-item">
+                <li class="site-menu-item active is-shown">
                   <a class="animsition-link" href="../../html/tables/cursos-precargados.html" data-slug="layout-grids">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Cursos precargados</span>
@@ -183,7 +183,7 @@
                 <span class="site-menu-title">Docentes</span>
               </a>
             </li>
-            <li class="site-menu-item active open">
+            <li class="site-menu-item">
               <a href="../../html/tables/consulta-chofer.html" data-slug="dashboard">
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
                 <span class="site-menu-title">Consulta chofer</span>
@@ -194,7 +194,7 @@
 
         </div>
       </div>
-    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide scrollable-container" draggable="false" style="height: 499px; width: 277px;"><div class="scrollable-bar-handle scrollable-content" style="width: 260px;"></div></div><div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
+    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
 
 
   </div>
@@ -204,50 +204,73 @@
   <!-- Page -->
   <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
     <div class="page-header">
-      <h1 class="page-title">Consulta choferes</h1>
-     <ol class="breadcrumb">
-                    <li><a href="javascript:void(0)">Inicio</a></li>
-                    <li class="active">Consulta choferes</li>
-                  </ol>
+      <h1 class="page-title">Detalles del curso:</h1>
+      <ol class="breadcrumb">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="javascript:void(0)">Cursos</a></li>
+        <li><a href="cursos-precargados.html">Cursos precargados</a></li>
+        <li class="active">Detalles del curso</li>
+      </ol>
+
+
+ 
+
 
     </div>
     <div class="page-content">
 
       <!-- Panel Table Add Row -->
-<div class="panel">
+      <div class="panel">
         <div class="panel-body">
-          <div class="row">
-                      <div class="col-sm-6 col-md-5">
-                      <div class="">
-                        <h4 class="example-title">DNI</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-              </div>
-          </div>
-          <div class="row">
-                      
-<div class="col-sm-6 col-md-2 margin-top-45">
-                      <div class="">
-                        <img class="img-rounded img-bordered img-bordered-primary" width="130" height="40" src="../captchaDummy.jpg" alt="...">
-                      </div>
-              </div><div class="col-sm-4 col-md-3 margin-top-20">
-                      <div class="">
-                        <h4 class="example-title">Código de seguridad</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-              </div>
-          </div>
-          <div class="row">
-                       <div class="col-sm-6 col-md-4 margin-top-20">
-                         <button type="button" class="btn btn btn-success">Consultar</button>
-                       </div>
-          </div>
 
+          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
+            
+            <tbody>
+              <tr class="gradeA">
+                <td><b>ID</td>
+                <td>12345</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Fecha de inicio</td>
+                <td>2015-08-14 00:12:00</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Fecha de fin</td>
+                <td>2015-08-14 00:12:00</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Código</td>
+                <td>5555555</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Docente</td>
+                <td>Jirafales</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Sede</td>
+                <td>Cabildo</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Tipo</td>
+                <td>complementario</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Estado</td>
+                <td>Por validar</td>                
+              </tr>          
+            </tbody>
+          </table>
 
+          <div class="dt-panelfooter clearfix">
+          <button type="button" onclick="location.href='cursos-precargados.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
+          <a href="cursos-precargados.html" data-slug="dashboard">
 
-          <!-- -->
-        </div>
+          </div>
+          <!-- -->        
+
       </div>
+
+  </div>
       <!-- End Panel Table Add Row -->
 
       
@@ -306,4 +329,4 @@
 
 
 
-<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>
+</body></html>

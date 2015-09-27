@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Cursos precargados</title>
+  <title>Asociaciones U-P: lista</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -50,13 +50,13 @@
     <![endif]-->
 
   <!-- Scripts -->
-  <script src="../../assets/vendor/modernizr/modernizr.js"></script>
+  <script src="../../assets/vendor/modernizr/modernizr.js"></script><style type="text/css"></style><style type="text/css"></style>
   <script src="../../assets/vendor/breakpoints/breakpoints.js"></script>
   <script>
     Breakpoints();
   </script>
-</head>
-<body class="site-menubar-unfold">
+<link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head>
+<body class="site-menubar-unfold" data-feedly-mini="yes">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -103,7 +103,7 @@
           <li class="dropdown">
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
               <i class="icon wb-chevron-down-mini"></i>
-              <span class="avatar avatar-online">Prestador</span>
+              <span class="avatar avatar-online">Admin</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -143,50 +143,24 @@
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
 
-            <li class="site-menu-item has-sub active open">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-library" aria-hidden="true"></i>
-                <span class="site-menu-title">Cursos</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/crear-curso.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear curso</span>
-                  </a>
-                </li>
-                <li class="site-menu-item ">
-                  <a class="animsition-link" href="../../html/tables/curso-lista.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cursos anteriores</span>
-                  </a>
-                </li>
-                <li class="site-menu-item active is-shown">
-                  <a class="animsition-link" href="../../html/tables/cursos-precargados.html" data-slug="layout-grids">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos precargados</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+
 
             <li class="site-menu-item">
-              <a href="../../html/tables/sedes.html" data-slug="dashboard">
+              <a href="usuarios-lista.html" >
                 <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
-                <span class="site-menu-title">Sedes</span>
+                <span class="site-menu-title">Usuarios</span>
               </a>
             </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/docentes.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Docentes</span>
+            <li class="site-menu-item ">
+              <a href="prestadores-lista.html" >
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Prestadores</span>
               </a>
             </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/consulta-chofer.html" data-slug="dashboard">
+            <li class="site-menu-item active open">
+              <a href="asociarUsuarioConPrestador.html" >
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Consulta chofer</span>
+                <span class="site-menu-title">Asociar usuarios</span>
               </a>
             </li>
           </ul>
@@ -194,7 +168,7 @@
 
         </div>
       </div>
-    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
+    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide scrollable-container" draggable="false" style="height: 499px; width: 277px;"><div class="scrollable-bar-handle scrollable-content" style="width: 260px;"></div></div><div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
 
 
   </div>
@@ -204,12 +178,12 @@
   <!-- Page -->
   <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
     <div class="page-header">
-      <h1 class="page-title">Cursos precargados</h1>
-      <ol class="breadcrumb">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="javascript:void(0)">Cursos</a></li>
-        <li class="active">Cursos precargados</li>
-      </ol>
+      <h1 class="page-title">Asociaciones usuarios prestador</h1>
+     <ol class="breadcrumb">
+                    <li><a href="javascript:void(0)">Inicio</a></li>
+                    <li class="active">Asociaciones usuarios prestador</li>
+
+                  </ol>
 
 
       <div class="page-header-actions">
@@ -226,62 +200,27 @@
                     <div class="well">
                        <div class="row">
                       <div class="col-sm-6 col-md-4">
-                      <div class="">
-                        <h4 class="example-title">ID</h4>
+                      
+                        <h4 class="example-title">Usuario</h4>
                         <input type="text" class="form-control" id="inputHelpText">
+                        
 
-                      </div>
                       </div>
                       <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Fecha inicio</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Fecha fin</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-
-                     </div> <!-- row-->
-                     <div class="row">
-
-                      <div class="col-sm-6 col-md-4">
-                      <div class="">
-                        <h4 class="example-title">Código</h4>
+                        <h4 class="example-title">Prestador</h4>
                         <input type="text" class="form-control" id="inputHelpText">
-
                       </div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Fecha de creación</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-                      <!-- End Example With Help -->
-                     </div> <!-- row-->
+                      
+                    </div>
+                     
                      <div class="row">
                        <div class="col-sm-6 col-md-4 margin-top-20">
-                         <button type="button" class="btn btn-outline btn-default">Limpiar </button>
+                         <button type="button" class="btn btn-outline btn-default">Limpiar</button>
                          <button type="button" class="btn btn btn-success">Filtrar</button>
                        </div>
-                     </div> <!-- row-->
+                     </div>
                     </div>
-                  </div>
+            
 
 
 
@@ -297,105 +236,72 @@
           <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
             <thead>
               <tr>
-                <th>Id</th>
-                <th>Fecha inicio</th>
-                <th>Fecha fin</th>
-                <th>Código</th>
-                <th>Tipo curso</th>
-                <th>Estado</th>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Prestador</th>
                 <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
               <tr class="gradeA">
                 <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>Jorge Perez</td>
+                <td>prestador1</td>
+                
+
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='ver-detalles-curso.html';" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='cargar-notas.html';" data-original-title="Cargar notas"><i class="icon wb-upload" aria-hidden="true"></i></a>
+                  <a href="ver-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="editar-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
-              <tr class="gradeA">
+               <tr class="gradeA">
                 <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>Jorge Perez</td>
+                <td>prestador1</td>
+                
+
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='ver-detalles-curso.html';" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='cargar-notas.html';" data-original-title="Cargar notas"><i class="icon wb-upload" aria-hidden="true"></i></a>
+                  <a href="ver-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="editar-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
-              <tr class="gradeA">
+            <tr class="gradeA">
                 <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>Jorge Perez</td>
+                <td>prestador1</td>
+                
+
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='ver-detalles-curso.html';" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='cargar-notas.html';" data-original-title="Cargar notas"><i class="icon wb-upload" aria-hidden="true"></i></a>
+                  <a href="ver-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="editar-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
-              <tr class="gradeA">
+            <tr class="gradeA">
                 <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>Jorge Perez</td>
+                <td>prestador1</td>
+                
+
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='ver-detalles-curso.html';" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='cargar-notas.html';" data-original-title="Cargar notas"><i class="icon wb-upload" aria-hidden="true"></i></a>
+                  <a href="ver-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="editar-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
-              <tr class="gradeA">
+            <tr class="gradeA">
                 <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>Jorge Perez</td>
+                <td>prestador1</td>
+                
+
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='ver-detalles-curso.html';" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='cargar-notas.html';" data-original-title="Cargar notas"><i class="icon wb-upload" aria-hidden="true"></i></a>
+                  <a href="ver-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="editar-asociarUsuarioConPrestador.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
-              </tr>
-                  <tr class="gradeA">
-                <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='ver-detalles-curso.html';" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='cargar-notas.html';" data-original-title="Cargar notas"><i class="icon wb-upload" aria-hidden="true"></i></a>
-                </td>
-              </tr>
-              <tr class="gradeA">
-                <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='ver-detalles-curso.html';" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" onclick="location.href='cargar-notas.html';" data-original-title="Cargar notas"><i class="icon wb-upload" aria-hidden="true"></i></a>
-                </td>
-              </tr>
-            </tbody>
+              </tr</tbody>
           </table>
 
           <div class="dt-panelfooter clearfix">
-          <button type="button" onclick="location.href='crear-curso.html';" class="btn btn btn-success margin-top-10">Crear curso</button>
+            <button type="button" onclick="location.href='asociarUsuarioConPrestador-crear.html';" class="btn btn-success margin-top-10">Crear asociación</button>
           <div class="dataTables_paginate paging_simple_numbers" id="exampleTableTools_paginate">
           <ul class="pagination">
           <li class="paginate_button previous disabled" id="exampleTableTools_previous">
@@ -412,11 +318,9 @@
           </ul>
           </div>
           </div>
-          <!-- -->        
-
-      </div>
-
-  </div>
+          <!-- -->
+        </div>
+      </div></div>
       <!-- End Panel Table Add Row -->
 
       
@@ -475,4 +379,4 @@
 
 
 
-</body></html>
+<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>

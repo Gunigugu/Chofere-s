@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Consulta choferes</title>
+  <title>Ver usuario</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -103,7 +103,7 @@
           <li class="dropdown">
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
               <i class="icon wb-chevron-down-mini"></i>
-              <span class="avatar avatar-online">Prestador</span>
+              <span class="avatar avatar-online">Admin</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -143,50 +143,24 @@
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
 
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-library" aria-hidden="true"></i>
-                <span class="site-menu-title">Cursos</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/crear-curso.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear curso</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/curso-lista.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cursos anteriores</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/cursos-precargados.html" data-slug="layout-grids">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos precargados</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
 
-            <li class="site-menu-item">
-              <a href="../../html/tables/sedes.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
-                <span class="site-menu-title">Sedes</span>
-              </a>
-            </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/docentes.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Docentes</span>
-              </a>
-            </li>
+
             <li class="site-menu-item active open">
-              <a href="../../html/tables/consulta-chofer.html" data-slug="dashboard">
+              <a href="usuarios-lista.html" >
+                <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
+                <span class="site-menu-title">Usuarios</span>
+              </a>
+            </li>
+            <li class="site-menu-item ">
+              <a href="prestadores-lista.html" >
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Prestadores</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a href="asociarUsuarioConPrestador.html" >
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Consulta chofer</span>
+                <span class="site-menu-title">Asociar usuarios</span>
               </a>
             </li>
           </ul>
@@ -204,49 +178,64 @@
   <!-- Page -->
   <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
     <div class="page-header">
-      <h1 class="page-title">Consulta choferes</h1>
+      <h1 class="page-title">Ver usuario</h1>
      <ol class="breadcrumb">
                     <li><a href="javascript:void(0)">Inicio</a></li>
-                    <li class="active">Consulta choferes</li>
+                    <li>Usuarios</li>
+                    <li class="active">Ver usuario</li>
                   </ol>
+
+
+      
+
+
+
+
+               
+            
+
+
+
+
 
     </div>
     <div class="page-content">
 
       <!-- Panel Table Add Row -->
-<div class="panel">
-        <div class="panel-body">
-          <div class="row">
-                      <div class="col-sm-6 col-md-5">
-                      <div class="">
-                        <h4 class="example-title">DNI</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-              </div>
-          </div>
-          <div class="row">
-                      
-<div class="col-sm-6 col-md-2 margin-top-45">
-                      <div class="">
-                        <img class="img-rounded img-bordered img-bordered-primary" width="130" height="40" src="../captchaDummy.jpg" alt="...">
-                      </div>
-              </div><div class="col-sm-4 col-md-3 margin-top-20">
-                      <div class="">
-                        <h4 class="example-title">Código de seguridad</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-              </div>
-          </div>
-          <div class="row">
-                       <div class="col-sm-6 col-md-4 margin-top-20">
-                         <button type="button" class="btn btn btn-success">Consultar</button>
-                       </div>
-          </div>
+      <div class="panel">
+         <div class="panel-body">
 
+          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
+            
+            <tbody>
+              <tr class="gradeA">
+                <td><b>ID</td>
+                <td>12345</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Nombre</td>
+                <td>Jorge</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>E-mail</td>
+                <td>asd@asd.com</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Activo</td>
+                <td>true</td>                
+              </tr>
+              
+            </tbody>
+          </table>
 
+          <div class="dt-panelfooter clearfix">
+          <button type="button" onclick="location.href='usuarios-lista.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
+          <a href="cursos-precargados.html" data-slug="dashboard">
 
-          <!-- -->
-        </div>
+          </div>
+          <!-- -->        
+
+      </div>
       </div>
       <!-- End Panel Table Add Row -->
 

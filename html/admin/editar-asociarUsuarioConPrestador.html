@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Sedes: lista</title>
+  <title>Editar asociación</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -103,7 +103,7 @@
           <li class="dropdown">
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
               <i class="icon wb-chevron-down-mini"></i>
-              <span class="avatar avatar-online">Prestador</span>
+              <span class="avatar avatar-online">Admin</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -143,50 +143,24 @@
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
 
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-library" aria-hidden="true"></i>
-                <span class="site-menu-title">Cursos</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/crear-curso.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear curso</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/curso-lista.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cursos anteriores</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/cursos-precargados.html" data-slug="layout-grids">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos precargados</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
 
-            <li class="site-menu-item active open">
-              <a href="../../html/tables/sedes.html" data-slug="dashboard">
+
+            <li class="site-menu-item ">
+              <a href="usuarios-lista.html" >
                 <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
-                <span class="site-menu-title">Sedes</span>
+                <span class="site-menu-title">Usuarios</span>
               </a>
             </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/docentes.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Docentes</span>
+            <li class="site-menu-item ">
+              <a href="prestadores-lista.html" >
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Prestadores</span>
               </a>
             </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/consulta-chofer.html" data-slug="dashboard">
+            <li class="site-menu-item active open">
+              <a href="asociarUsuarioConPrestador.html" >
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Consulta chofer</span>
+                <span class="site-menu-title">Asociar usuarios</span>
               </a>
             </li>
           </ul>
@@ -204,83 +178,22 @@
   <!-- Page -->
   <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
     <div class="page-header">
-      <h1 class="page-title">Sedes</h1>
+      <h1 class="page-title">Ver usuario</h1>
      <ol class="breadcrumb">
                     <li><a href="javascript:void(0)">Inicio</a></li>
-                    <li class="active">Sedes</li>
+                    <li>Asociación S-P</li>
+                    <li class="active">Editar asociación
+                    </li>
                   </ol>
 
 
-      <div class="page-header-actions">
-        <a class="btn btn-sm btn-default btn-outline btn-round" data-toggle="collapse" href="#exampleCollapseExample" aria-expanded="false" aria-controls="exampleCollapseExample">
-          <i class="icon wb-chevron-down" aria-hidden="true"></i>
-          <span class="hidden-xs">Filtrar</span>
-        </a>
-      </div>
+      
 
 
 
 
-                <div class="collapse" id="exampleCollapseExample" aria-expanded="false" style="height: 0px;">
-                    <div class="well">
-                       <div class="row">
-                      <div class="col-sm-6 col-md-4">
-                      <div class="">
-                        <h4 class="example-title">ID</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-
-                      </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Fecha inicio</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Fecha fin</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-
-                     </div> <!-- row-->
-                     <div class="row">
-
-                      <div class="col-sm-6 col-md-4">
-                      <div class="">
-                        <h4 class="example-title">Código</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-
-                      </div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Fecha de creación</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-                      <!-- End Example With Help -->
-                     </div> <!-- row-->
-                     <div class="row">
-                       <div class="col-sm-6 col-md-4 margin-top-20">
-                         <button type="button" class="btn btn-outline btn-default">Limpiar</button>
-                         <button type="button" class="btn btn btn-success">Filtrar</button>
-                       </div>
-                     </div> <!-- row-->
-                    </div>
-                  </div>
+               
+            
 
 
 
@@ -291,90 +204,36 @@
 
       <!-- Panel Table Add Row -->
       <div class="panel">
-        <div class="panel-body">
+         <div class="panel-body">
 
           <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Dirección</th>
-                <th>Provincia</th>
-                <th>Ciudad</th>
-                <th>Teléfono</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
+            
             <tbody>
               <tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
+                <td><b>ID</td>
+                <td><input type="text" class="form-control" id="inputHelpText"></td>                
               </tr>
-              
-              
-              
-              
-              
-              
-            <tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr><tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr><tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr></tbody>
+              <tr class="gradeA">
+                <td><b>Usuario</td>
+                <td><input type="text" class="form-control" id="inputHelpText"></td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Prestador</td>
+                <td><input type="text" class="form-control" id="inputHelpText"></td>                
+              </tr>
+            </tbody>
           </table>
 
           <div class="dt-panelfooter clearfix">
-          <div class="dataTables_paginate paging_simple_numbers" id="exampleTableTools_paginate">
-          <ul class="pagination">
-          <li class="paginate_button previous disabled" id="exampleTableTools_previous">
-          <a href="#" aria-controls="exampleTableTools" data-dt-idx="0" tabindex="0">
-          <i class="icon wb-chevron-left-mini"></i></a></li>
-          <li class="paginate_button active"><a href="#" aria-controls="exampleTableTools" data-dt-idx="1" tabindex="0">1</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="2" tabindex="0">2</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="3" tabindex="0">3</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="4" tabindex="0">4</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="5" tabindex="0">5</a></li>
-          <li class="paginate_button disabled" id="exampleTableTools_ellipsis"><a href="#" aria-controls="exampleTableTools" data-dt-idx="6" tabindex="0">…</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="7" tabindex="0">9</a></li>
-          <li class="paginate_button next" id="exampleTableTools_next"><a href="#" aria-controls="exampleTableTools" data-dt-idx="8" tabindex="0"><i class="icon wb-chevron-right-mini"></i></a></li>
-          </ul>
+          <button type="button" class="btn btn btn-success margin-top-10">Guardar</button>
+          
+          <button type="button" onclick="location.href='asociarUsuarioConPrestador.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
+          <a href="cursos-precargados.html" data-slug="dashboard">
+
           </div>
-          </div>
-          <!-- -->
-        </div>
+          <!-- -->        
+
+      </div>
       </div>
       <!-- End Panel Table Add Row -->
 

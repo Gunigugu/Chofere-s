@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html class="no-js css-menubar" lang="en">
-<head>
+<html class="no-js css-menubar" lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Cursos anteriores</title>
+  <title>CNTSV - Cursos</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -37,7 +36,7 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="../../assets/fonts/web-icons/web-icons.min.css">
   <link rel="stylesheet" href="../../assets/fonts/brand-icons/brand-icons.min.css">
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
   <!-- Inline -->
   <link rel="stylesheet" href="../../assets/examples/css/tables/datatable.css">
 
@@ -57,7 +56,7 @@
     Breakpoints();
   </script>
 </head>
-<body>
+<body class="site-menubar-unfold">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -65,24 +64,18 @@
   <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
-      data-toggle="menubar">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided unfolded" data-toggle="menubar">
+        <span class="sr-only"></span>
         <span class="hamburger-bar"></span>
       </button> 
-      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
-      data-toggle="collapse">
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
         <i class="icon wb-more-horizontal" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
         <img class="navbar-brand-logo" src="../../assets/images/logo.png" title="cntsv logo">
         <span class="navbar-brand-text"> CNTSV</span>
       </div>
-      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
-      data-toggle="collapse">
-        <span class="sr-only">Toggle Search</span>
-        <i class="icon wb-search" aria-hidden="true"></i>
-      </button>
+
     </div>
 
     <div class="navbar-container container-fluid">
@@ -92,7 +85,7 @@
         <ul class="nav navbar-toolbar">
           <li class="hidden-float" id="toggleMenubar">
             <a data-toggle="menubar" href="#" role="button">
-              <i class="icon hamburger hamburger-arrow-left">
+              <i class="icon hamburger hamburger-arrow-left hided unfolded">
                   <span class="sr-only">Cambiar visualización</span>
                   <span class="hamburger-bar"></span>
                 </i>
@@ -105,10 +98,9 @@
         <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
 
           <li class="dropdown">
-            <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
-            data-animation="scale-up" role="button">
-              <i class="icon wb-chevron-down-mini" ></i>
-              <span class="avatar avatar-online">Prestador</span>
+            <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+              <i class="icon wb-chevron-down-mini"></i>
+              <span class="avatar avatar-online">cntsv</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -133,8 +125,7 @@
             <div class="input-search">
               <i class="input-search-icon wb-search" aria-hidden="true"></i>
               <input type="text" class="form-control" name="site-search" placeholder="Search...">
-              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
-              data-toggle="collapse" aria-label="Close"></button>
+              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search" data-toggle="collapse" aria-label="Close"></button>
             </div>
           </div>
         </form>
@@ -142,7 +133,7 @@
       <!-- End Site Navbar Seach -->
     </div>
   </nav>
-  <div class="site-menubar">
+   <div class="site-menubar">
     <div class="site-menubar-body">
       <div>
         <div>
@@ -157,42 +148,78 @@
               </a>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/crear-curso.html" data-slug="layout-menu-collapsed">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-todos.html">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear curso</span>
+                    <span class="site-menu-title">Todos</span>
                   </a>
                 </li>
                 <li class="site-menu-item active is-shown">
-                  <a class="animsition-link" href="../../html/tables/curso-lista.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cursos anteriores</span>
+                  <a class="animsition-link" href="../../html/cntsv/cursos-confirmados.html">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Confirmados</span>
                   </a>
                 </li>
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/cursos-precargados.html" data-slug="layout-grids">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-validados.html" >
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos precargados</span>
+                    <span class="site-menu-title">Validados</span>
                   </a>
                 </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-cancelados.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Cancelados</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-fallas-val.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Con fallas de validación</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-confirmar.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Por confirmar</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-validar.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Por validar</span>
+                  </a>
+                </li>
+
               </ul>
             </li>
-
+            <li class="site-menu-item ">
+              <a href="../../html/cntsv/prestadores.html" >
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Prestadores</span>
+              </a>
+            </li>
             <li class="site-menu-item">
-              <a href="../../html/tables/sedes.html" data-slug="dashboard">
+              <a href="../../html/cntsv/sedes.html" >
                 <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
                 <span class="site-menu-title">Sedes</span>
               </a>
             </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/docentes.html" data-slug="dashboard">
+            <li class="site-menu-item ">
+              <a href="../../html/cntsv/docentes.html" >
                 <i class="site-menu-icon wb-users" aria-hidden="true"></i>
                 <span class="site-menu-title">Docentes</span>
               </a>
             </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/consulta-chofer.html" data-slug="dashboard">
+            <li class="site-menu-item ">
+              <a href="../../html/cntsv/choferes.html" >
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Consulta chofer</span>
+                <span class="site-menu-title">Choferes</span>
+              </a>
+            </li>
+            <li class="site-menu-item ">
+              <a href="../../html/cntsv/agregar-choferes.html" >
+                <i class="site-menu-icon wb-user-add" aria-hidden="true"></i>
+                <span class="site-menu-title">Agregar choferes</span>
               </a>
             </li>
           </ul>
@@ -210,11 +237,10 @@
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Cursos anteriores</h1>
+      <h1 class="page-title">Cursos confirmados</h1>
       <ol class="breadcrumb">
-        <li><a href="../index.html">Inicio</a></li>
         <li><a href="javascript:void(0)">Cursos</a></li>
-        <li class="active">Cursos anteriores</li>
+        <li class="active">Confirmados</li>
       </ol>
 
 
@@ -224,9 +250,6 @@
           <span class="hidden-xs">Filtrar</span>
         </a>
       </div>
-
-
-
 
                 <div class="collapse" id="exampleCollapseExample" aria-expanded="false" style="height: 0px;">
                     <div class="well">
@@ -278,8 +301,10 @@
                           <input type="text" class="form-control" data-plugin="datepicker">
                         </div>
                       </div>
+
                       <!-- End Example With Help -->
                      </div> <!-- row-->
+
                      <div class="row">
                        <div class="col-sm-6 col-md-4 margin-top-20">
                          <button type="button" class="btn btn-outline btn-default">Limpiar </button>
@@ -306,8 +331,12 @@
                 <th>Id</th>
                 <th>Fecha inicio</th>
                 <th>Fecha fin</th>
+                <th>Prestador</th>
                 <th>Código</th>
-                <th>Tipo curso</th>
+                <th>Comprobante</th>
+                <th>Docente</th>
+                <th>Sede</th>
+                <th>Tipo</th>
                 <th>Estado</th>
                 <th>Acciones</th>
               </tr>
@@ -317,84 +346,120 @@
                 <td>5</td>
                 <td>2015-08-14 00:12:00</td>
                 <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>prestador</td>
+                <td></td>
+                <td></td>
+                <td>Roberto Abbondanzieri</td>
+                <td>Peña Salteña</td>
+                <td>Complementario</td>
+                <td>Confirmado</td>
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
-                  data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="ver-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="aprobar-doc-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Aprobar Documentación"><i class="icon wb-check green-400" aria-hidden="true"></i></a>
+                  <a href="agregar-choferes-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Confirmar Curso"><i class="icon wb-check-circle green-600" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
                 <td>2015-08-14 00:12:00</td>
                 <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>prestador</td>
+                <td></td>
+                <td></td>
+                <td>Roberto Abbondanzieri</td>
+                <td>Peña Salteña</td>
+                <td>Complementario</td>
+                <td>Confirmado</td>
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
-                  data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="ver-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="aprobar-doc-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Aprobar Documentación"><i class="icon wb-check green-400" aria-hidden="true"></i></a>
+                  <a href="agregar-choferes-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Confirmar Curso"><i class="icon wb-check-circle green-600" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
                 <td>2015-08-14 00:12:00</td>
                 <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>prestador</td>
+                <td></td>
+                <td></td>
+                <td>Roberto Abbondanzieri</td>
+                <td>Peña Salteña</td>
+                <td>Complementario</td>
+                <td>Confirmado</td>
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
-                  data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="ver-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="aprobar-doc-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Aprobar Documentación"><i class="icon wb-check green-400" aria-hidden="true"></i></a>
+                  <a href="agregar-choferes-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Confirmar Curso"><i class="icon wb-check-circle green-600" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
                 <td>2015-08-14 00:12:00</td>
                 <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>prestador</td>
+                <td></td>
+                <td></td>
+                <td>Roberto Abbondanzieri</td>
+                <td>Peña Salteña</td>
+                <td>Complementario</td>
+                <td>Confirmado</td>
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
-                  data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="ver-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="aprobar-doc-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Aprobar Documentación"><i class="icon wb-check green-400" aria-hidden="true"></i></a>
+                  <a href="agregar-choferes-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Confirmar Curso"><i class="icon wb-check-circle green-600" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
                 <td>2015-08-14 00:12:00</td>
                 <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>prestador</td>
+                <td></td>
+                <td></td>
+                <td>Roberto Abbondanzieri</td>
+                <td>Peña Salteña</td>
+                <td>Complementario</td>
+                <td>Confirmado</td>
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
-                  data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="ver-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="aprobar-doc-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Aprobar Documentación"><i class="icon wb-check green-400" aria-hidden="true"></i></a>
+                  <a href="agregar-choferes-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Confirmar Curso"><i class="icon wb-check-circle green-600" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
                 <td>2015-08-14 00:12:00</td>
                 <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
+                <td>prestador</td>
+                <td></td>
+                <td></td>
+                <td>Roberto Abbondanzieri</td>
+                <td>Peña Salteña</td>
+                <td>Complementario</td>
+                <td>Confirmado</td>
                 <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
-                  data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr>
-              <tr class="gradeA">
-                <td>5</td>
-                <td>2015-08-14 00:12:00</td>
-                <td>2015-08-15 00:12:00</td>
-                <td>otro estado</td>
-                <td>basico</td>
-                <td>verificado</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
-                  data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="ver-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="aprobar-doc-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Aprobar Documentación"><i class="icon wb-check green-400" aria-hidden="true"></i></a>
+                  <a href="agregar-choferes-curso.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Confirmar Curso"><i class="icon wb-check-circle green-600" aria-hidden="true"></i></a>
                 </td>
               </tr>
             </tbody>
@@ -476,6 +541,6 @@
  <script src="../../assets/js/components/bootstrap-datepicker.js"></script>
 
 
-</body>
 
-</html>
+
+</body></html>

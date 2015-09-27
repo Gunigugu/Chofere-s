@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Detalles del curso</title>
+  <title>Editar usuario</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -50,13 +50,13 @@
     <![endif]-->
 
   <!-- Scripts -->
-  <script src="../../assets/vendor/modernizr/modernizr.js"></script>
+  <script src="../../assets/vendor/modernizr/modernizr.js"></script><style type="text/css"></style><style type="text/css"></style>
   <script src="../../assets/vendor/breakpoints/breakpoints.js"></script>
   <script>
     Breakpoints();
   </script>
-</head>
-<body class="site-menubar-unfold">
+<link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head>
+<body class="site-menubar-unfold" data-feedly-mini="yes">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -103,7 +103,7 @@
           <li class="dropdown">
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
               <i class="icon wb-chevron-down-mini"></i>
-              <span class="avatar avatar-online">Prestador</span>
+              <span class="avatar avatar-online">Admin</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -143,50 +143,24 @@
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
 
-            <li class="site-menu-item has-sub active open">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-library" aria-hidden="true"></i>
-                <span class="site-menu-title">Cursos</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/crear-curso.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear curso</span>
-                  </a>
-                </li>
-                <li class="site-menu-item ">
-                  <a class="animsition-link" href="../../html/tables/curso-lista.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cursos anteriores</span>
-                  </a>
-                </li>
-                <li class="site-menu-item active is-shown">
-                  <a class="animsition-link" href="../../html/tables/cursos-precargados.html" data-slug="layout-grids">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos precargados</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
 
-            <li class="site-menu-item">
-              <a href="../../html/tables/sedes.html" data-slug="dashboard">
+
+            <li class="site-menu-item active open">
+              <a href="usuarios-lista.html" >
                 <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
-                <span class="site-menu-title">Sedes</span>
+                <span class="site-menu-title">Usuarios</span>
+              </a>
+            </li>
+            <li class="site-menu-item ">
+              <a href="prestadores-lista.html" >
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Prestadores</span>
               </a>
             </li>
             <li class="site-menu-item">
-              <a href="../../html/tables/docentes.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Docentes</span>
-              </a>
-            </li>
-            <li class="site-menu-item">
-              <a href="../../html/tables/consulta-chofer.html" data-slug="dashboard">
+              <a href="asociarUsuarioConPrestador.html" >
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Consulta chofer</span>
+                <span class="site-menu-title">Asociar usuarios</span>
               </a>
             </li>
           </ul>
@@ -194,7 +168,7 @@
 
         </div>
       </div>
-    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
+    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide scrollable-container" draggable="false" style="height: 499px; width: 277px;"><div class="scrollable-bar-handle scrollable-content" style="width: 260px;"></div></div><div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
 
 
   </div>
@@ -204,16 +178,24 @@
   <!-- Page -->
   <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
     <div class="page-header">
-      <h1 class="page-title">Detalles del curso:</h1>
-      <ol class="breadcrumb">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="javascript:void(0)">Cursos</a></li>
-        <li><a href="cursos-precargados.html">Cursos precargados</a></li>
-        <li class="active">Detalles del curso</li>
-      </ol>
+      <h1 class="page-title">Editar usuario</h1>
+     <ol class="breadcrumb">
+                    <li><a href="javascript:void(0)">Inicio</a></li>
+                    <li>Usuarios</li>
+                    <li class="active">Editar usuario</li>
+                  </ol>
 
 
- 
+      
+
+
+
+
+               
+            
+
+
+
 
 
     </div>
@@ -221,21 +203,46 @@
 
       <!-- Panel Table Add Row -->
       <div class="panel">
-        <div class="panel-body">
+         <div class="panel-body">
 
-          <div role="alert" class="alert dark alert-primary">                  
-                  <h4>Las notas fueron cargadas con éxito</h4>
-                  <p>
-                    El curso está ahora pendiente de validación por la CNSVT
-                  </p>
-                  <p class="margin-top-15">
-                    <button class="btn btn-primary btn-inverse btn-outline" onclick="location.href='cursos-precargados.html';" type="button">Volver al listado</button>
-                  </p>
-                </div>          <!-- -->        
+          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
+            
+            <tbody>
+              <tr class="gradeA">
+                <td><b>ID</td>
+                <td><input type="text" class="form-control" id="inputHelpText"></td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Nombre</td>
+                <td><input type="text" class="form-control" id="inputHelpText"></td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>E-mail</td>
+                <td><input type="text" class="form-control" id="inputHelpText"></td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Activo</td>
+                <td>
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Ana María Da Col</option>
+                                    <option>otro</option>
+                                  </select>
+                                </td>                
+              </tr>
+              
+            </tbody>
+          </table>
+
+          <div class="dt-panelfooter clearfix">
+          <button type="button" onclick="location.href='usuarios-lista.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
+          <a href="cursos-precargados.html" data-slug="dashboard">
+
+          </div>
+          <!-- -->        
 
       </div>
-
-  </div>
+      </div>
       <!-- End Panel Table Add Row -->
 
       
@@ -294,4 +301,4 @@
 
 
 
-</body></html>
+<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>

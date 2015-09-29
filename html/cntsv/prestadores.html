@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>CNTSV - Sedes</title>
+  <title>CNTSV - Prestadores</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -192,13 +192,13 @@
 
               </ul>
             </li>
-            <li class="site-menu-item ">
+            <li class="site-menu-item active is-shown">
               <a href="../../html/cntsv/prestadores.html" >
                 <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
                 <span class="site-menu-title">Prestadores</span>
               </a>
             </li>
-            <li class="site-menu-item active is-shown">
+            <li class="site-menu-item">
               <a href="../../html/cntsv/sedes.html" >
                 <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
                 <span class="site-menu-title">Sedes</span>
@@ -239,7 +239,7 @@
       <h1 class="page-title">Sedes</h1>
      <ol class="breadcrumb">
                     <li><a href="javascript:void(0)">Inicio</a></li>
-                    <li class="active">Sedes</li>
+                    <li class="active">Prestadores</li>
                   </ol>
 
 
@@ -269,7 +269,7 @@
                       </div>
                       
                       <div class="col-sm-6 col-md-4">
-                        <h4 class="example-title">Direccion</h4>
+                        <h4 class="example-title">CUIT</h4>
                         <input type="text" class="form-control" id="inputHelpText">
                       </div>
                     </div>
@@ -277,12 +277,7 @@
                       <div class="row">
                       <div class="col-sm-6 col-md-4">
                       
-                        <h4 class="example-title">Provincia</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-                      
-                      <div class="col-sm-6 col-md-4">
-                        <h4 class="example-title">Ciudad</h4>
+                        <h4 class="example-title">Dirección</h4>
                         <input type="text" class="form-control" id="inputHelpText">
                       </div>
                       
@@ -290,18 +285,17 @@
                         <h4 class="example-title">Teléfono</h4>
                         <input type="text" class="form-control" id="inputHelpText">
                       </div>
+                      
+                      <div class="col-sm-6 col-md-4">
+                        <h4 class="example-title">E-mail</h4>
+                        <input type="text" class="form-control" id="inputHelpText">
+                      </div>
                     </div>
                       <div class="row">
                         <div class="col-sm-6 col-md-4">
-                            <h4 class="example-title">Prestador</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Ana María Da Col</option>
-                                    <option>otro</option>
-                                  </select>
-                                </div>
-                          </div>
+                        <h4 class="example-title">Logo</h4>
+                        <input type="text" class="form-control" id="inputHelpText">
+                      </div>
                         </div>
                       
                       
@@ -336,85 +330,79 @@
               <tr>
                 <th>Id</th>
                 <th>Nombre</th>
+                <th>CUIT</th>
                 <th>Dirección</th>
-                <th>Provincia</th>
-                <th>Ciudad</th>
                 <th>Teléfono</th>
-                <th>Prestador</th>
+                <th>E-mail</th>
                 <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
               <tr class="gradeA">
                 <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td>Roberto Gomez</td>
+                <td>Fernando</td>
+                <td>2310333555</td>
+                <td>saraza y mozart</td>
+                <td>4444-4444</td>
+                <td>Roberto@Gomez.com</td>
                 <td class="actions">
-                  <a href="sedes-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="sedes-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
+                  <a href="prestadores-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="prestadores-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td>Roberto Gomez</td>
+                <td>Fernando</td>
+                <td>2310333555</td>
+                <td>saraza y mozart</td>
+                <td>4444-4444</td>
+                <td>Roberto@Gomez.com</td>
                 <td class="actions">
-                  <a href="sedes-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="sedes-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
+                  <a href="prestadores-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="prestadores-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td>Roberto Gomez</td>
+                <td>Fernando</td>
+                <td>2310333555</td>
+                <td>saraza y mozart</td>
+                <td>4444-4444</td>
+                <td>Roberto@Gomez.com</td>
                 <td class="actions">
-                  <a href="sedes-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="sedes-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
+                  <a href="prestadores-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="prestadores-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td>Roberto Gomez</td>
+                <td>Fernando</td>
+                <td>2310333555</td>
+                <td>saraza y mozart</td>
+                <td>4444-4444</td>
+                <td>Roberto@Gomez.com</td>
                 <td class="actions">
-                  <a href="sedes-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="sedes-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
+                  <a href="prestadores-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="prestadores-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr class="gradeA">
                 <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td>Roberto Gomez</td>
+                <td>Fernando</td>
+                <td>2310333555</td>
+                <td>saraza y mozart</td>
+                <td>4444-4444</td>
+                <td>Roberto@Gomez.com</td>
                 <td class="actions">
-                  <a href="sedes-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                  <a href="sedes-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
+                  <a href="prestadores-ver.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
+                  <a href="prestadores-editar.html" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="Editar"><i class="icon wb-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
              </tbody>
           </table>
 
           <div class="dt-panelfooter clearfix">
-            <button type="button" onclick="location.href='sedes-crear.html';" class="btn btn btn-success margin-top-10 ">Crear sede</button>
+            <button type="button" onclick="location.href='prestadores-crear.html';" class="btn btn btn-success margin-top-10 ">Crear prestador</button>
           <div class="dataTables_paginate paging_simple_numbers" id="exampleTableTools_paginate">
           <ul class="pagination">
           <li class="paginate_button previous disabled" id="exampleTableTools_previous">

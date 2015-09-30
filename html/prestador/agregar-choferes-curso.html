@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+
+  <title>Agregar chofer</title>
+
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../../assets/css/bootstrap-extend.css">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../assets/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../assets/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../assets/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../assets/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../assets/vendor/flag-icon-css/flag-icon.css">
+
+  <!-- Plugins For This Page -->
+  <link rel="stylesheet" href="../../assets/vendor/datatables-bootstrap/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="../../assets/vendor/datatables-fixedheader/dataTables.fixedHeader.css">
+  <link rel="stylesheet" href="../../assets/vendor/datatables-responsive/dataTables.responsive.css">
+  <link rel="stylesheet" href="../../assets/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+
+  <!-- Page -->
+  <link rel="stylesheet" href="../../assets/css/../fonts/font-awesome/font-awesome.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../assets/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="../../assets/fonts/brand-icons/brand-icons.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
+  <!-- Inline -->
+  <link rel="stylesheet" href="../../assets/examples/css/tables/datatable.css">
+
+  <!--[if lt IE 9]>
+    <script src="../../assets/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 10]>
+    <script src="../../assets/vendor/media-match/media.match.min.js"></script>
+    <script src="../../assets/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Scripts -->
+  <script src="../../assets/vendor/modernizr/modernizr.js"></script>
+  <script src="../../assets/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+    Breakpoints();
+  </script>
+</head>
+<body class="site-menubar-unfold">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided unfolded" data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button> 
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <img class="navbar-brand-logo" src="../../assets/images/logo.png" title="cntsv logo">
+        <span class="navbar-brand-text"> CNTSV</span>
+      </div>
+
+    </div>
+
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="hidden-float" id="toggleMenubar">
+            <a data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left hided unfolded">
+                  <span class="sr-only">Cambiar visualización</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar -->
+
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+
+          <li class="dropdown">
+            <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+              <i class="icon wb-chevron-down-mini"></i>
+              <span class="avatar avatar-online">Prestador</span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="presentation">
+                <a href="../../html/pages/construccion.html" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Cambiar contraseña</a>
+              </li>
+              <li class="divider" role="presentation"></li>
+              <li role="presentation">
+                <a href="../../html/pages/construccion.html" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Cerrar sesión</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon wb-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" name="site-search" placeholder="Search...">
+              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search" data-toggle="collapse" aria-label="Close"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+  <div class="site-menubar">
+    <div class="site-menubar-body scrollable scrollable-inverse is-enabled scrollable-vertical" style="position: relative;">
+      <div class="scrollable-container" style="height: 499px; width: 277px;">
+        <div class="scrollable-content" style="width: 260px;">
+          <ul class="site-menu">
+            <li class="site-menu-category">Menu</li>
+
+            <li class="site-menu-item has-sub active open">
+              <a href="javascript:void(0)" data-slug="layout">
+                <i class="site-menu-icon wb-library" aria-hidden="true"></i>
+                <span class="site-menu-title">Cursos</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/prestador/crear-curso.html" data-slug="layout-menu-collapsed">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Crear curso</span>
+                  </a>
+                </li>
+                <li class="site-menu-item ">
+                  <a class="animsition-link" href="../../html/prestador/curso-lista.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Cursos anteriores</span>
+                  </a>
+                </li>
+                <li class="site-menu-item active is-shown">
+                  <a class="animsition-link" href="../../html/prestador/cursos-precargados.html" data-slug="layout-grids">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Cursos precargados</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="site-menu-item">
+              <a href="../../html/prestador/sedes.html" data-slug="dashboard">
+                <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
+                <span class="site-menu-title">Sedes</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a href="../../html/prestador/docentes.html" data-slug="dashboard">
+                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
+                <span class="site-menu-title">Docentes</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a href="../../html/prestador/consulta-chofer.html" data-slug="dashboard">
+                <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                <span class="site-menu-title">Consulta chofer</span>
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
+
+
+  </div>
+
+
+
+  <!-- Page -->
+  <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
+    <div class="page-header">
+      <h1 class="page-title">Agregar chofer al curso:</h1>
+      <ol class="breadcrumb">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="javascript:void(0)">Cursos</a></li>
+        <li><a href="cursos-precargados.html">Cursos precargados</a></li>
+        <li class="active">Agregar chofer al curso</li>
+      </ol>
+
+
+ 
+
+
+    </div>
+    <div class="page-content">
+
+      <!-- Panel Table Add Row -->
+      <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Escriba para buscar un nombre existente.</h3>
+            </div>
+                  <div class="panel-body container-fluid">
+                           <div class="row ">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Nombre del chofer:</h4>
+                            <input type="text" class="form-control" id="inputHelpText">
+                          </div>
+                          
+                         </div> <!-- row-->
+                           
+
+
+
+
+
+
+
+
+
+
+                         <div class="row">
+                           <div class="col-sm-6 col-md-8 margin-top-40">
+                             
+                             <button type="button" class="btn btn btn-success">Agregar choferes seleccionados al curso</button>
+                             
+                           </div>
+                         </div> <!-- row-->
+                         <div class="row">
+                          <div class="col-sm-6 col-md-8 margin-top-10">
+                          <button type="button" onclick="location.href='cursos-precargados.html';" class="btn btn-outline btn-default ">Volver al listado</button>
+                        </div>
+                         </div> <!-- row-->
+                         <br><br><br>
+                         <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
+            <thead>
+              <tr>
+                
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Tiene curso básico</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="gradeA">
+                
+                <td>jorge</td>
+                <td>ramos</td>
+                <td>123123123</td>
+
+                <td>si</td>
+
+                <td class="actions">
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="borrar"><i class="icon wb-trash " aria-hidden="true"></i></a>
+                  
+                </td>
+              </tr>
+              
+               
+            </tbody>
+          </table>
+                        </div><!-- panel-->
+                        </div>
+
+  </div>
+      <!-- End Panel Table Add Row -->
+
+      
+
+    </div>
+  </div>
+  <!-- End Page -->
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span class="site-footer-legal">© 2015 <a href="http://www.cntsv.gob.ar/">Comisión nacional del tránsito y la seguridad vial</a></span>
+
+  </footer>
+
+  <!-- Core  -->
+  <script src="../../assets/vendor/jquery/jquery.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../assets/vendor/animsition/jquery.animsition.js"></script>
+  <script src="../../assets/vendor/asscroll/jquery-asScroll.js"></script>
+  <script src="../../assets/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../assets/vendor/asscrollable/jquery.asScrollable.all.js"></script>
+  <script src="../../assets/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+
+  <!-- Plugins -->
+  <script src="../../assets/vendor/switchery/switchery.min.js"></script>
+  <script src="../../assets/vendor/intro-js/intro.js"></script>
+  <script src="../../assets/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../assets/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+
+  <!-- Plugins For This Page -->
+  <script src="../../assets/vendor/datatables/jquery.dataTables.js"></script>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/core.js"></script>
+  <script src="../../assets/js/site.js"></script>
+
+  <script src="../../assets/js/sections/menu.js"></script>
+  <script src="../../assets/js/sections/menubar.js"></script>
+  <script src="../../assets/js/sections/gridmenu.js"></script>
+  <script src="../../assets/js/sections/sidebar.js"></script>
+
+
+  <script src="../../assets/js/components/asscrollable.js"></script>
+  <script src="../../assets/js/components/animsition.js"></script>
+  <script src="../../assets/js/components/slidepanel.js"></script>
+  <script src="../../assets/js/components/switchery.js"></script>
+
+  <!-- Scripts For This Page -->
+  <script src="../../assets/js/components/datatables.js"></script>
+
+  <script src="../../assets/examples/js/tables/datatable.js"></script>
+  <script src="../../assets/examples/js/uikit/icon.js"></script>
+ <script src="../../assets/js/components/bootstrap-datepicker.js"></script>
+
+
+
+
+</body></html>

@@ -139,6 +139,12 @@
         <div class="scrollable-content" style="width: 260px;">
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
+            <li class="site-menu-item active open">
+              <a href="home.html" >
+                <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
+                <span class="site-menu-title">Home</span>
+              </a>
+            </li>
 
             <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="layout">
@@ -148,19 +154,19 @@
               </a>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/crear-curso.html" data-slug="layout-menu-collapsed">
+                  <a class="animsition-link" href="../../html/prestador/crear-curso.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Crear curso</span>
                   </a>
                 </li>
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/curso-lista.html" data-slug="layout-menu-expended">
+                  <a class="animsition-link" href="../../html/prestador/curso-lista.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Cursos anteriores</span>
                   </a>
                 </li>
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/tables/cursos-precargados.html" data-slug="layout-grids">
+                  <a class="animsition-link" href="../../html/prestador/cursos-precargados.html" data-slug="layout-grids">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Cursos precargados</span>
                   </a>
@@ -168,20 +174,20 @@
               </ul>
             </li>
 
-            <li class="site-menu-item active open">
-              <a href="../../html/tables/sedes.html" data-slug="dashboard">
+            <li class="site-menu-item ">
+              <a href="../../html/prestador/sedes.html" data-slug="dashboard">
                 <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
                 <span class="site-menu-title">Sedes</span>
               </a>
             </li>
             <li class="site-menu-item">
-              <a href="../../html/tables/docentes.html" data-slug="dashboard">
+              <a href="../../html/prestador/docentes.html" data-slug="dashboard">
                 <i class="site-menu-icon wb-users" aria-hidden="true"></i>
                 <span class="site-menu-title">Docentes</span>
               </a>
             </li>
             <li class="site-menu-item">
-              <a href="../../html/tables/consulta-chofer.html" data-slug="dashboard">
+              <a href="../../html/prestador/consulta-chofer.html" data-slug="dashboard">
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
                 <span class="site-menu-title">Consulta chofer</span>
               </a>
@@ -191,188 +197,37 @@
 
         </div>
       </div>
-    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide scrollable-container" draggable="false" style="height: 499px; width: 277px;"><div class="scrollable-bar-handle scrollable-content" style="width: 260px;"></div></div><div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
+  
 
 
   </div>
 
-
+</div>
 
   <!-- Page -->
-  <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
-    <div class="page-header">
-      <h1 class="page-title">Sedes</h1>
-     <ol class="breadcrumb">
-                    <li><a href="javascript:void(0)">Inicio</a></li>
-                    <li class="active">Sedes</li>
-                  </ol>
-
-
-      <div class="page-header-actions">
-        <a class="btn btn-sm btn-default btn-outline btn-round" data-toggle="collapse" href="#exampleCollapseExample" aria-expanded="false" aria-controls="exampleCollapseExample">
-          <i class="icon wb-chevron-down" aria-hidden="true"></i>
-          <span class="hidden-xs">Filtrar</span>
-        </a>
-      </div>
-
-
-
-
-                <div class="collapse" id="exampleCollapseExample" aria-expanded="false" style="height: 0px;">
-                    <div class="well">
-                       <div class="row">
-                      <div class="col-sm-6 col-md-4">
-                      
-                        <h4 class="example-title">ID</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                        
-
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <h4 class="example-title">Nombre</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-                      
-                      <div class="col-sm-6 col-md-4">
-                        <h4 class="example-title">Direccion</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-                    </div>
-                      
-                      <div class="row">
-                      <div class="col-sm-6 col-md-4">
-                      
-                        <h4 class="example-title">Provincia</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-                      
-                      <div class="col-sm-6 col-md-4">
-                        <h4 class="example-title">Ciudad</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-                      
-                      <div class="col-sm-6 col-md-4">
-                        <h4 class="example-title">Teléfono</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-                      
-                      
-                      
-                      
-
-                      
-                      <!-- End Example With Help -->
-                     </div> <!-- row-->
-                     <div class="row">
-                       <div class="col-sm-6 col-md-4 margin-top-20">
-                         <button type="button" class="btn btn-outline btn-default">Limpiar</button>
-                         <button type="button" class="btn btn btn-success">Filtrar</button>
-                       </div>
-                     </div> <!-- row-->
-                    </div>
-            
-
-
-
-
-
-    </div>
-    <div class="page-content">
+    <div class="page animsition">
+    
+<div class="page-content">
 
       <!-- Panel Table Add Row -->
       <div class="panel">
-        <div class="panel-body">
+         <div class="panel-body">
 
-          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Dirección</th>
-                <th>Provincia</th>
-                <th>Ciudad</th>
-                <th>Teléfono</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr>
-              
-              
-              
-              
-              
-              
-            <tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr><tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr><tr class="gradeA">
-                <td>5</td>
-                <td>Triunvirato</td>
-                <td>Av. Triunvirato 2222</td>
-                <td>CABA</td>
-                <td>CABA</td>
-                <td>5555-5555</td>
-                <td class="actions">
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="ver"><i class="icon wb-eye" aria-hidden="true"></i></a>
-                </td>
-              </tr></tbody>
-          </table>
+          <div class="page-header text-center">
+                <h1 class="page-title">Home</h1>
+                <p class="page-description">
+                  Bienvenido nombreUsuario.
+                </p>
+              </div>
 
-          <div class="dt-panelfooter clearfix">
-          <div class="dataTables_paginate paging_simple_numbers" id="exampleTableTools_paginate">
-          <ul class="pagination">
-          <li class="paginate_button previous disabled" id="exampleTableTools_previous">
-          <a href="#" aria-controls="exampleTableTools" data-dt-idx="0" tabindex="0">
-          <i class="icon wb-chevron-left-mini"></i></a></li>
-          <li class="paginate_button active"><a href="#" aria-controls="exampleTableTools" data-dt-idx="1" tabindex="0">1</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="2" tabindex="0">2</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="3" tabindex="0">3</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="4" tabindex="0">4</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="5" tabindex="0">5</a></li>
-          <li class="paginate_button disabled" id="exampleTableTools_ellipsis"><a href="#" aria-controls="exampleTableTools" data-dt-idx="6" tabindex="0">…</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="7" tabindex="0">9</a></li>
-          <li class="paginate_button next" id="exampleTableTools_next"><a href="#" aria-controls="exampleTableTools" data-dt-idx="8" tabindex="0"><i class="icon wb-chevron-right-mini"></i></a></li>
-          </ul>
-          </div>
-          </div>
-          <!-- -->
-        </div>
-      </div>
-      <!-- End Panel Table Add Row -->
+          
 
       
 
     </div>
   </div>
-  <!-- End Page -->
+</div>
+</div>
 
 
   <!-- Footer -->

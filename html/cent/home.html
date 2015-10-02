@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Detalles del curso</title>
+  <title>Cargar notas</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -100,7 +100,7 @@
           <li class="dropdown">
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
               <i class="icon wb-chevron-down-mini"></i>
-              <span class="avatar avatar-online">Prestador</span>
+              <span class="avatar avatar-online">CENT</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -139,59 +139,37 @@
         <div class="scrollable-content" style="width: 260px;">
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
-            <li class="site-menu-item">
+            <li class="site-menu-item active open">
               <a href="home.html" >
                 <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
                 <span class="site-menu-title">Home</span>
               </a>
             </li>
 
-            <li class="site-menu-item has-sub active open">
+            <li class="site-menu-item has-sub ">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-library" aria-hidden="true"></i>
-                <span class="site-menu-title">Cursos</span>
+                <span class="site-menu-title">Reportes</span>
                 <span class="site-menu-arrow"></span>
               </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/prestador/crear-curso.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear curso</span>
-                  </a>
-                </li>
+              <ul class="site-menu-sub ">
                 <li class="site-menu-item ">
-                  <a class="animsition-link" href="../../html/prestador/curso-lista.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cursos anteriores</span>
+                  <a class="animsition-link" href="reporte-cantidad-choferes.html" data-slug="layout-menu-collapsed">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Cantidad choferes</span>
                   </a>
                 </li>
-                <li class="site-menu-item active is-shown">
-                  <a class="animsition-link" href="../../html/prestador/cursos-precargados.html" data-slug="layout-grids">
+                
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="reporte-cantidad-actualizacion.html" data-slug="layout-grids">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos precargados</span>
+                    <span class="site-menu-title">Actualizar choferes</span>
                   </a>
                 </li>
               </ul>
             </li>
 
-            <li class="site-menu-item">
-              <a href="../../html/prestador/sedes.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
-                <span class="site-menu-title">Sedes</span>
-              </a>
-            </li>
-            <li class="site-menu-item">
-              <a href="../../html/prestador/docentes.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Docentes</span>
-              </a>
-            </li>
-            <li class="site-menu-item">
-              <a href="../../html/prestador/consulta-chofer.html" data-slug="dashboard">
-                <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Consulta chofer</span>
-              </a>
-            </li>
+            
           </ul>
 
 
@@ -205,96 +183,29 @@
 
 
   <!-- Page -->
-  <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
-    <div class="page-header">
-      <h1 class="page-title">Detalles del curso:</h1>
-      <ol class="breadcrumb">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="javascript:void(0)">Cursos</a></li>
-        <li><a href="cursos-precargados.html">Cursos precargados</a></li>
-        <li class="active">Detalles del curso</li>
-      </ol>
-
-
- 
-
-
-    </div>
-    <div class="page-content">
+    <div class="page animsition">
+    
+<div class="page-content">
 
       <!-- Panel Table Add Row -->
       <div class="panel">
-        <div class="panel-body">
+         <div class="panel-body">
 
-          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
-            
-            <tbody>
-              <tr class="gradeA">
-                <td><b>ID</td>
-                <td>12345</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Fecha de inicio</td>
-                <td>2015-08-14 00:12:00</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Fecha de fin</td>
-                <td>2015-08-14 00:12:00</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Código</td>
-                <td>5555555</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Año</td>
-                <td>5555555</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Comprobante</td>
-                <td>FT123124</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Fecha de pago</td>
-                <td>21/9/2015</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Docente</td>
-                <td>Jirafales</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Sede</td>
-                <td>Cabildo</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Tipo</td>
-                <td>complementario</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Estado</td>
-                <td>Por validar</td>                
-              </tr>          
-            </tbody>
-          </table>
+          <div class="page-header text-center">
+                <h1 class="page-title">Home</h1>
+                <p class="page-description">
+                  Bienvenido nombreUsuario.
+                </p>
+              </div>
 
-          <div class="dt-panelfooter clearfix">
-          <button type="button" onclick="location.href='cursos-precargados.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
-          <a href="cursos-precargados.html" data-slug="dashboard">
-
-          </div>
-          <!-- -->        
-
-      </div>
-
-  </div>
-      <!-- End Panel Table Add Row -->
+          
 
       
 
     </div>
   </div>
-  <!-- End Page -->
-
-
+</div>
+</div>
   <!-- Footer -->
   <footer class="site-footer">
     <span class="site-footer-legal">© 2015 <a href="http://www.cntsv.gob.ar/">Comisión nacional del tránsito y la seguridad vial</a></span>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html class="no-js css-menubar" lang="en">
-<head>
+<html class="no-js css-menubar" lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Crear curso</title>
+  <title>CNTSV - Estatus chofer</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -30,7 +29,6 @@
   <link rel="stylesheet" href="../../assets/vendor/datatables-fixedheader/dataTables.fixedHeader.css">
   <link rel="stylesheet" href="../../assets/vendor/datatables-responsive/dataTables.responsive.css">
   <link rel="stylesheet" href="../../assets/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="../../assets/vendor/jt-timepicker/jquery-timepicker.css">
 
   <!-- Page -->
   <link rel="stylesheet" href="../../assets/css/../fonts/font-awesome/font-awesome.css">
@@ -38,7 +36,7 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="../../assets/fonts/web-icons/web-icons.min.css">
   <link rel="stylesheet" href="../../assets/fonts/brand-icons/brand-icons.min.css">
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
   <!-- Inline -->
   <link rel="stylesheet" href="../../assets/examples/css/tables/datatable.css">
 
@@ -58,7 +56,7 @@
     Breakpoints();
   </script>
 </head>
-<body>
+<body class="site-menubar-unfold">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -66,24 +64,18 @@
   <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
-      data-toggle="menubar">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided unfolded" data-toggle="menubar">
+        <span class="sr-only"></span>
         <span class="hamburger-bar"></span>
       </button> 
-      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
-      data-toggle="collapse">
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
         <i class="icon wb-more-horizontal" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
         <img class="navbar-brand-logo" src="../../assets/images/logo.png" title="cntsv logo">
         <span class="navbar-brand-text"> CNTSV</span>
       </div>
-      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
-      data-toggle="collapse">
-        <span class="sr-only">Toggle Search</span>
-        <i class="icon wb-search" aria-hidden="true"></i>
-      </button>
+
     </div>
 
     <div class="navbar-container container-fluid">
@@ -93,7 +85,7 @@
         <ul class="nav navbar-toolbar">
           <li class="hidden-float" id="toggleMenubar">
             <a data-toggle="menubar" href="#" role="button">
-              <i class="icon hamburger hamburger-arrow-left">
+              <i class="icon hamburger hamburger-arrow-left hided unfolded">
                   <span class="sr-only">Cambiar visualización</span>
                   <span class="hamburger-bar"></span>
                 </i>
@@ -106,10 +98,9 @@
         <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
 
           <li class="dropdown">
-            <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
-            data-animation="scale-up" role="button">
-              <i class="icon wb-chevron-down-mini" ></i>
-              <span class="avatar avatar-online">Prestador</span>
+            <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+              <i class="icon wb-chevron-down-mini"></i>
+              <span class="avatar avatar-online">cntsv</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -134,8 +125,7 @@
             <div class="input-search">
               <i class="input-search-icon wb-search" aria-hidden="true"></i>
               <input type="text" class="form-control" name="site-search" placeholder="Search...">
-              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
-              data-toggle="collapse" aria-label="Close"></button>
+              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search" data-toggle="collapse" aria-label="Close"></button>
             </div>
           </div>
         </form>
@@ -143,63 +133,100 @@
       <!-- End Site Navbar Seach -->
     </div>
   </nav>
-  <div class="site-menubar">
+   <div class="site-menubar">
     <div class="site-menubar-body">
       <div>
         <div>
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
-            <li class="site-menu-item">
+            <li class="site-menu-item active">
               <a href="home.html" >
                 <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
                 <span class="site-menu-title">Home</span>
               </a>
             </li>
+            
 
-            <li class="site-menu-item has-sub active open">
+            <li class="site-menu-item has-sub ">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-library" aria-hidden="true"></i>
                 <span class="site-menu-title">Cursos</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
-                <li class="site-menu-item active is-shown">
-                  <a class="animsition-link" href="../../html/prestador/crear-curso.html" data-slug="layout-menu-collapsed">
+                <li class="site-menu-item ">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-todos.html">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear curso</span>
+                    <span class="site-menu-title">Todos</span>
                   </a>
                 </li>
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/prestador/curso-lista.html" data-slug="layout-menu-expended">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-confirmados.html">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos anteriores</span>
+                    <span class="site-menu-title">Confirmados</span>
                   </a>
                 </li>
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/prestador/cursos-precargados.html" data-slug="layout-grids">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-validados.html" >
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cursos precargados</span>
+                    <span class="site-menu-title">Validados</span>
                   </a>
                 </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-cancelados.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Cancelados</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-fallas-val.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Con fallas de validación</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-confirmar.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Por confirmar</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/cntsv/cursos-validar.html" >
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Por validar</span>
+                  </a>
+                </li>
+
               </ul>
             </li>
-
+            <li class="site-menu-item ">
+              <a href="../../html/cntsv/prestadores.html" >
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Prestadores</span>
+              </a>
+            </li>
             <li class="site-menu-item">
-              <a href="../../html/prestador/sedes.html" data-slug="dashboard">
+              <a href="../../html/cntsv/sedes.html" >
                 <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
                 <span class="site-menu-title">Sedes</span>
               </a>
             </li>
             <li class="site-menu-item ">
-              <a href="../../html/prestador/docentes.html" data-slug="dashboard">
+              <a href="../../html/cntsv/docentes.html" >
                 <i class="site-menu-icon wb-users" aria-hidden="true"></i>
                 <span class="site-menu-title">Docentes</span>
               </a>
             </li>
             <li class="site-menu-item ">
-              <a href="../../html/prestador/consulta-chofer.html" data-slug="dashboard">
+              <a href="../../html/cntsv/choferes.html" >
                 <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Consulta chofer</span>
+                <span class="site-menu-title">Choferes</span>
+              </a>
+            </li>
+            <li class="site-menu-item ">
+              <a href="../../html/cntsv/agregar-choferes.html" >
+                <i class="site-menu-icon wb-user-add" aria-hidden="true"></i>
+                <span class="site-menu-title">Agregar choferes</span>
               </a>
             </li>
           </ul>
@@ -216,121 +243,28 @@
 
   <!-- Page -->
   <div class="page animsition">
-    <div class="page-header">
-      <h1 class="page-title">Crear curso</h1>
-      <ol class="breadcrumb">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="javascript:void(0)">Cursos</a></li>
-        <li class="active">Crear curso</li>
-      </ol>
-    </div>
-    <div class="page-content">
-      <div class="panel">
-            <div class="panel-heading">
-              <h3 class="panel-title">Todos los campos son obligatorios</h3>
-            </div>
-                  <div class="panel-body container-fluid">
-                           <div class="row ">
-                          <div class="col-sm-6 col-md-6">
-                          <h4 class="example-title">Fecha de inicio</h4>
-                            <div class="input-group">
-                              <span class="input-group-addon">
-                                <i class="icon wb-calendar" aria-hidden="true"></i>
-                              </span>
-                              <input type="text" class="form-control" data-plugin="datepicker">
-                            </div>
-                          </div>
-                          <div class="col-sm-6 col-md-6">
-                            <h4 class="example-title">Hora</h4>
-                              <div class="input-group">
-                                <span class="input-group-addon">
-                                  <i class="icon wb-time" aria-hidden="true"></i>
-                                </span>
-                                <input type="text" class="form-control ui-timepicker-input" data-plugin="timepicker" autocomplete="off">
-                              </div>
-                          </div>
-                         </div> <!-- row-->
-                           <div class="row margin-top-30">
-                          <div class="col-sm-6 col-md-6 ">
-                          <h4 class="example-title">Fecha fin</h4>
-                            <div class="input-group">
-                              <span class="input-group-addon">
-                                <i class="icon wb-calendar" aria-hidden="true"></i>
-                              </span>
-                              <input type="text" class="form-control" data-plugin="datepicker">
-                            </div>
-                          </div>
-                          <div class="col-sm-6 col-md-6">
-                            <h4 class="example-title">Hora</h4>
-                              <div class="input-group">
-                                <span class="input-group-addon">
-                                  <i class="icon wb-time" aria-hidden="true"></i>
-                                </span>
-                                <input type="text" class="form-control ui-timepicker-input" data-plugin="timepicker" autocomplete="off">
-                              </div>
-                          </div>
-                         </div> <!-- row-->
-                         <div class="row">
-                          <div class="col-sm-6 col-md-6 margin-top-30 ">
-                            <h4 class="example-title">Tipo de curso</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Básico</option>
-                                    <option>otro</option>
-                                  </select>
-                                </div>
-                          </div>
-                          <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">Docente</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Ana María Da Col</option>
-                                    <option>otro</option>
-                                  </select>
-                                </div>
-                          </div>
-                         </div> <!-- row-->
-                         <div class="row">
-                          <div class="col-sm-6 col-md-6 ">
-                            <h4 class="example-title">Sede</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Central</option>
-                                    <option>Otra</option>
-                                  </select>
-                                </div>
-                          </div>
-                          
-                         </div> <!-- row-->
-
-
-
-
-
-
-
-
-
-
-                         <div class="row">
-                           <div class="col-sm-6 col-md-4 margin-top-20">
-                             <button type="button" class="btn btn-outline btn-default">Limpiar </button>
-                             <button type="button" class="btn btn btn-success">Crear</button>
-                           </div>
-                         </div> <!-- row-->
-                        </div><!-- panel-->
-                        </div><!-- panel body-->
-                      </div><!-- content-->
-
     
+<div class="page-content">
+
+      <!-- Panel Table Add Row -->
+      <div class="panel">
+         <div class="panel-body">
+
+          <div class="page-header text-center">
+                <h1 class="page-title">Home</h1>
+                <p class="page-description">
+                  Bienvenido nombreUsuario.
+                </p>
+              </div>
+
+          
 
       
 
+    </div>
   </div>
-  </div>
+</div>
+</div>
   <!-- End Page -->
 
 
@@ -358,9 +292,6 @@
   <!-- Plugins For This Page -->
   <script src="../../assets/vendor/datatables/jquery.dataTables.js"></script>
 
-  <script src="../../assets/vendor/jt-timepicker/jquery.timepicker.min.js"></script>
-
-
   <!-- Scripts -->
   <script src="../../assets/js/core.js"></script>
   <script src="../../assets/js/site.js"></script>
@@ -383,9 +314,7 @@
   <script src="../../assets/examples/js/uikit/icon.js"></script>
  <script src="../../assets/js/components/bootstrap-datepicker.js"></script>
 
- <script src="../../assets/js/components/jt-timepicker.js"></script>
 
 
-</body>
 
-</html>
+</body></html>

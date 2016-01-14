@@ -6,7 +6,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>CNTSV - Sedes</title>
+  <title>Ver usuario</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -50,13 +50,13 @@
     <![endif]-->
 
   <!-- Scripts -->
-  <script src="../../assets/vendor/modernizr/modernizr.js"></script>
+  <script src="../../assets/vendor/modernizr/modernizr.js"></script><style type="text/css"></style><style type="text/css"></style>
   <script src="../../assets/vendor/breakpoints/breakpoints.js"></script>
   <script>
     Breakpoints();
   </script>
-</head>
-<body class="site-menubar-unfold">
+<link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head>
+<body class="site-menubar-unfold" data-feedly-mini="yes">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -65,7 +65,7 @@
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided unfolded" data-toggle="menubar">
-        <span class="sr-only"></span>
+        <span class="sr-only">Toggle navigation</span>
         <span class="hamburger-bar"></span>
       </button> 
       <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
@@ -75,7 +75,10 @@
         <img class="navbar-brand-logo" src="../../assets/images/logo.png" title="cntsv logo">
         <span class="navbar-brand-text"> CNTSV</span>
       </div>
-
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search" data-toggle="collapse">
+        <span class="sr-only">Toggle Search</span>
+        <i class="icon wb-search" aria-hidden="true"></i>
+      </button>
     </div>
 
     <div class="navbar-container container-fluid">
@@ -100,7 +103,7 @@
           <li class="dropdown">
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
               <i class="icon wb-chevron-down-mini"></i>
-              <span class="avatar avatar-online">cntsv</span>
+              <span class="avatar avatar-online">Admin</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -133,99 +136,31 @@
       <!-- End Site Navbar Seach -->
     </div>
   </nav>
-   <div class="site-menubar">
-    <div class="site-menubar-body">
-      <div>
-        <div>
+  <div class="site-menubar">
+    <div class="site-menubar-body scrollable scrollable-inverse is-enabled scrollable-vertical" style="position: relative;">
+      <div class="scrollable-container" style="height: 499px; width: 277px;">
+        <div class="scrollable-content" style="width: 260px;">
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
-            <li class="site-menu-item">
-              <a href="home.html" >
-                <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
-                <span class="site-menu-title">Home</span>
-              </a>
-            </li>
 
-            <li class="site-menu-item has-sub ">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-library" aria-hidden="true"></i>
-                <span class="site-menu-title">Cursos</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item ">
-                  <a class="animsition-link" href="../../html/cntsv/cursos-todos.html">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Todos</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/cntsv/cursos-confirmados.html">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Confirmados</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/cntsv/cursos-validados.html" >
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Validados</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/cntsv/cursos-cancelados.html" >
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Cancelados</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/cntsv/cursos-fallas-val.html" >
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Con fallas de validación</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/cntsv/cursos-confirmar.html" >
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Por confirmar</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/cntsv/cursos-validar.html" >
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Por validar</span>
-                  </a>
-                </li>
 
-              </ul>
+
+            <li class="site-menu-item active open">
+              <a href="usuarios-lista.html" >
+                <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
+                <span class="site-menu-title">Usuarios</span>
+              </a>
             </li>
             <li class="site-menu-item ">
-              <a href="../../html/cntsv/prestadores.html" >
+              <a href="prestadores-lista.html" >
                 <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
                 <span class="site-menu-title">Prestadores</span>
               </a>
             </li>
-            <li class="site-menu-item active is-shown">
-              <a href="../../html/cntsv/sedes.html" >
-                <i class="site-menu-icon wb-flag" aria-hidden="true"></i>
-                <span class="site-menu-title">Sedes</span>
-              </a>
-            </li>
-            <li class="site-menu-item ">
-              <a href="../../html/cntsv/docentes.html" >
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Docentes</span>
-              </a>
-            </li>
-            <li class="site-menu-item ">
-              <a href="../../html/cntsv/choferes.html" >
-                <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                <span class="site-menu-title">Choferes</span>
-              </a>
-            </li>
             <li class="site-menu-item">
-              <a href="../../html/cntsv/agregar-choferes.html" >
-                <i class="site-menu-icon wb-user-add" aria-hidden="true"></i>
-                <span class="site-menu-title">Agregar choferes</span>
+              <a href="asociarUsuarioConPrestador.html" >
+                <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                <span class="site-menu-title">Asociar usuarios</span>
               </a>
             </li>
           </ul>
@@ -233,42 +168,82 @@
 
         </div>
       </div>
-    </div>
+    <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide scrollable-container" draggable="false" style="height: 499px; width: 277px;"><div class="scrollable-bar-handle scrollable-content" style="width: 260px;"></div></div><div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false"><div class="scrollable-bar-handle"></div></div></div>
 
 
   </div>
 
 
-  <div class="page animsition">
-    
-<div class="page-content">
+
+  <!-- Page -->
+  <div class="page animsition" style="animation-duration: 0.8s; opacity: 1;">
+    <div class="page-header">
+      <h1 class="page-title">Ver usuario</h1>
+     <ol class="breadcrumb">
+                    <li><a href="javascript:void(0)">Inicio</a></li>
+                    <li>Usuarios</li>
+                    <li class="active">Ver usuario</li>
+                  </ol>
+
+
+      
+
+
+
+
+               
+            
+
+
+
+
+
+    </div>
+    <div class="page-content">
 
       <!-- Panel Table Add Row -->
       <div class="panel">
          <div class="panel-body">
 
-          <div class="page-header text-center">
-                <h1 class="page-title">Home</h1>
-                <p class="page-description">
-                  Bienvenido nombreUsuario.
-                </p>
-              </div>
+          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
+            
+            <tbody>
+              <tr class="gradeA">
+                <td><b>ID</td>
+                <td>12345</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Nombre</td>
+                <td>Jorge</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>E-mail</td>
+                <td>asd@asd.com</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Activo</td>
+                <td>true</td>                
+              </tr>
+              
+            </tbody>
+          </table>
 
-          
+          <div class="dt-panelfooter clearfix">
+          <button type="button" onclick="location.href='usuarios-lista.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
+          <a href="cursos-precargados.html" data-slug="dashboard">
+
+          </div>
+          <!-- -->        
+
+      </div>
+      </div>
+      <!-- End Panel Table Add Row -->
 
       
 
     </div>
   </div>
-</div>
-</div>
-
-
-
-
-
-
-  
+  <!-- End Page -->
 
 
   <!-- Footer -->
@@ -320,4 +295,4 @@
 
 
 
-</body></html>
+<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>
